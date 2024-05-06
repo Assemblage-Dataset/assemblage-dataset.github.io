@@ -20,7 +20,6 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-<img src="/assets/images/logo.jpeg" style="width: 150px; float: right;"/>
           <h1>{{ site.title | default: site.github.repository_name }}</h1>	  
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
@@ -46,6 +45,7 @@
               1.3M Binaries
             </a>
           {% endif %}
+	    <img src="/assets/images/logo.jpeg" style="width: 150px;"/>
 
           {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
