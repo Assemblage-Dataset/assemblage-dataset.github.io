@@ -8,8 +8,7 @@ diverse, corpuses of binaries. Assemblage runs continuously on AWS,
 crawling GitHub for available repositories (of C and C++ code, for
 now) and then configuring, diversifying (across compiler / flag
 variant), and building binary artifacts. To date, Assemblage has built
-over 800k Windows PE binaries, along with 700k Linux ELF
-binaries. 
+over 890k Windows PE binaries, along with 428k Linux ELF binaries.
 
 Assemblage's high-level design looks like this:
 
@@ -41,35 +40,35 @@ repositories; datasets with pdb files are also available upon request.
 1. 62k Windows PE Binaries (Processed to SQLite database, last updated: Apr 14th 2024):
 
 - SQLite databse (12G):
-  - https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.sqlite.zip
+  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.sqlite.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.sqlite.zip)
 
 - Binary dataset (7G):
-  - https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.zip
+  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.zip)
 
 2.Windows vcpkg dataset (Processed to SQLite database, 29k):
 
 - SQLite database (3.3GB):
-  - https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.sqlite.zip
+  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.sqlite.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.sqlite.zip)
 
 - Binary dataset (18G):
-  - https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.zip
+  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.zip)
 
 3.Linux GitHub dataset (Processed to SQLite database, 211k):
 
 - SQLite database (23M):
-  - https://assemblage-lps.s3.us-west-1.amazonaws.com/public/feb15_linux_licensed.sqlite
+  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/feb15_linux_licensed.sqlite](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/feb15_linux_licensed.sqlite)
 
 - Binary dataset (72G):
-  - https://assemblage-lps.s3.us-west-1.amazonaws.com/public/licensed_linux.zip
+  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/licensed_linux.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/licensed_linux.zip)
 
-## GitHub Repo, bugs 
+## GitHub Repo / Bug Reports
 
 Assemblage's public source is kept
 [here](https://github.com/Assemblage-Dataset/Assemblage). 
 
 Please report bugs via GitHub.
 
-## Bugs / Contact Us / Citations
+## Contact Us / Citations
 
 Assemblage is primarily developed at Syracuse University, by a team
 that includes:
