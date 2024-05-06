@@ -1,0 +1,6 @@
+title: Assemblage
+description: A dataset (and tool for building) binary executable corpuses.
+show_downloads: true
+github.pdf: /assets/total-datasheet.pdf
+google_analytics:
+theme: jekyll-theme-architect
