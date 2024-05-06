@@ -1,4 +1,6 @@
 title: Assemblage
+github.is_project_page: true
+github.is_user_page: false
 description: A dataset (and tool for building) binary executable corpuses.
 show_downloads: true
 github.pdf: /assets/total-datasheet.pdf
