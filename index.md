@@ -8,8 +8,9 @@ executables) and a cloud-based distributed system for building large,
 diverse, corpuses of binaries. Assemblage runs continuously on AWS,
 crawling GitHub for available repositories (of C and C++ code, for
 now) and then configuring, diversifying (across compiler / flag
-variant), and building binary artifacts. To date, Assemblage has built
-over 890k Windows PE binaries, along with 428k Linux ELF binaries.
+variants), and building binary artifacts. To date, Assemblage has
+built over 890k Windows PE binaries, along with 428k Linux ELF
+binaries.
 
 Assemblage's high-level design looks like this:
 
