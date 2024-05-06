@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 Assemblage is both a dataset (of x86-64 ELF and Windows PE
 executables) and a cloud-based distributed system for building large,
 diverse, corpuses of binaries. Assemblage runs continuously on AWS,
@@ -29,13 +30,20 @@ As of March '24, our dataset looks roughly like this (see our [datasheet](/asset
 
 ## Publicly-Hosted Snapshots
 
+Here we include only the subset of binaries for which permissive
+licenses can be ascertained. Please contact us if you would like
+recipes for unlicensed repositories. PDB files are too large to be
+included in our publicly-hosted repositories; datasets with PDB files
+are also available upon request.
+
+Each dataset is broken up into both (a) an SQLite file, which includes
+metadata, and (b) a dump of the binaries themselves. Please see our
+[datasheet](/assets/dataset-total.pdf) for a description of database
+organization. We are working on additional tutorials now, please reach
+out if you are interested in specific types of queries.
+
 We are currently hosting on AWS, please contact us is you plan to
 consume large amounts of bandwidth.
-
-We include only the subset of binaries for which permissive licenses can be ascertained.
-
-PDB files are too large to be included in our publicly-hosted
-repositories; datasets with pdb files are also available upon request.
 
 1. 62k Windows PE Binaries (Processed to SQLite database, last updated: Apr 14th 2024):
 
