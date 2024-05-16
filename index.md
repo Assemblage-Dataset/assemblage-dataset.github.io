@@ -19,7 +19,7 @@ Assemblage's high-level design looks like this:
 
 ## March '24 Dataset Snapshot
 
-As of March '24, our dataset looks roughly like this (see our [datasheet](/assets/dataset-total.pdf) for more information):
+As of March '24, our dataset looks roughly like this (see our [datasheet](https://assemblage-dataset.net/assets/total-datasheet.pdf) for more information):
 
 | Source  | Platform | License  | Total | Repositories | Functions | Functions (w/ source code) |
 |---------|----------|----------|-------|--------------|-----------|-----------------------------|
