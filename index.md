@@ -43,32 +43,24 @@ metadata, and (b) a dump of the binaries themselves. Please see our
 organization. We are working on additional tutorials now, please reach
 out if you are interested in specific types of queries.
 
-We are currently hosting on AWS, please contact us is you plan to
-consume large amounts of bandwidth.
+For dataset usage and docs, please refer to [Assemblage Docs](https://assemblagedocs.readthedocs.io). 
+We are currently hosting the public dataset on Kaggle and Hugging Face (datasets hosted on these platforms are the same)
 
-1. 62k Windows PE Binaries (Processed to SQLite database, last updated: Apr 14th 2024):
+1. Windows PE Binaries:
 
-- SQLite databse (12G):
-  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.sqlite.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.sqlite.zip)
+- [Kaggle](https://www.kaggle.com/datasets/changliuh7rfs5/assemblagedataset)
+- [Hugging Face](https://huggingface.co/datasets/changliu8541/Assemblage_PE)
 
-- Binary dataset (7G):
-  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.zip)
+2.Windows vcpkg dataset:
 
-2.Windows vcpkg dataset (Processed to SQLite database, 29k):
+- [Kaggle](https://www.kaggle.com/datasets/changliuh7rfs5/assemblage-vcpkg)
+- [Hugging Face](https://huggingface.co/datasets/changliu8541/Assemblage_vcpkgDLL)
+ 
+3.Linux GitHub dataset:
 
-- SQLite database (3.3GB):
-  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.sqlite.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.sqlite.zip)
+- [Kaggle](https://www.kaggle.com/datasets/changliuh7rfs5/assemblagelinux)
+- [Hugging Face](https://huggingface.co/datasets/changliu8541/Assemblage_LinuxELF)
 
-- Binary dataset (18G):
-  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.zip)
-
-3.Linux GitHub dataset (Processed to SQLite database, 211k):
-
-- SQLite database (23M):
-  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/feb15_linux_licensed.sqlite](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/feb15_linux_licensed.sqlite)
-
-- Binary dataset (72G):
-  - [https://assemblage-lps.s3.us-west-1.amazonaws.com/public/licensed_linux.zip](https://assemblage-lps.s3.us-west-1.amazonaws.com/public/licensed_linux.zip)
 
 ## GitHub Repo / Bug Reports
 
