@@ -1109,5 +1109,22 @@ footer a:hover {
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+.inner {
+  width: 760px;
+}
+
+#main-content {
+  float: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .inner {
+    width: 760px;
+  }
+  #main-content {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

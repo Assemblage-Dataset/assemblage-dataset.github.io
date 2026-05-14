@@ -18,14 +18,12 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A dataset (and tool for building) binary executable corpuses." />
 <meta property="og:description" content="A dataset (and tool for building) binary executable corpuses." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Assemblage" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Assemblage" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A dataset (and tool for building) binary executable corpuses.","headline":"Assemblage","name":"Assemblage","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"A dataset (and tool for building) binary executable corpuses.","headline":"Assemblage","name":"Assemblage","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -45,8 +43,8 @@
   <body>
     <header>
       <div class="inner">
-        <a href="http://localhost:4000/">
-          <h1>Assemblage</h1>
+        <a href="/">
+          <h1>Assemblage</h1>	  
         </a>
         <h2>A dataset (and tool for building) binary executable corpuses.</h2>
         
@@ -57,22 +55,17 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <p>Assemblage is both a dataset (of x86-64 ELF and Windows PE
-executables) and a cloud-based distributed system for building large,
-diverse, corpuses of binaries. Assemblage runs continuously on AWS,
-crawling GitHub for available repositories (of C and C++ code, for
-now) and then configuring, diversifying (across compiler / flag
-variant), and building binary artifacts. To date, Assemblage has built
-over 800k Windows PE binaries, along with 700k Linux ELF
-binaries.</p>
+          <h1 id="about-assemblage">About Assemblage</h1>
+
+<p>Assemblage is a dataset of x86-64 ELF and Windows PE executables, along with a cloud-based distributed system for building large, diverse corpora of binaries.</p>
 
 <p>Assemblage’s high-level design looks like this:</p>
 
-<p><img src="/assets/images/assemblage-design.png" alt="Assemblage's high-level system design" width="600" /></p>
+<p><img src="/assets/images/assemblage-design.png" alt="Assemblage's high-level system design" width="500" /></p>
 
-<h2 id="march-24-dataset-snapshot">March ‘24 Dataset Snapshot</h2>
+<h2 id="dataset-snapshot">Dataset Snapshot</h2>
 
-<p>As of March ‘24, our dataset looks roughly like this (see our <a href="/assets/dataset-total.pdf">datasheet</a> for more information):</p>
+<p>Our dataset was initially released in March 2024 and looks roughly like this:</p>
 
 <table>
   <thead>
@@ -83,7 +76,6 @@ binaries.</p>
       <th>Total</th>
       <th>Repositories</th>
       <th>Functions</th>
-      <th>Functions (w/ source code)</th>
     </tr>
   </thead>
   <tbody>
@@ -94,7 +86,6 @@ binaries.</p>
       <td>890k</td>
       <td>172k</td>
       <td>298M</td>
-      <td>20M</td>
     </tr>
     <tr>
       <td> </td>
@@ -103,7 +94,6 @@ binaries.</p>
       <td>62k</td>
       <td>12k</td>
       <td>38M</td>
-      <td>3M</td>
     </tr>
     <tr>
       <td> </td>
@@ -112,7 +102,6 @@ binaries.</p>
       <td>428k</td>
       <td>48k</td>
       <td>316M</td>
-      <td>N/A</td>
     </tr>
     <tr>
       <td> </td>
@@ -121,7 +110,6 @@ binaries.</p>
       <td>211k</td>
       <td>13k</td>
       <td>186M</td>
-      <td>N/A</td>
     </tr>
     <tr>
       <td>vcpkg</td>
@@ -130,104 +118,104 @@ binaries.</p>
       <td>29k</td>
       <td>1k</td>
       <td>48M</td>
-      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>As of May 2026, the public dataset has been updated with the latest statistics:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Platform</th>
+      <th>License</th>
+      <th>Total</th>
+      <th>Repositories</th>
+      <th>Functions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GitHub</td>
+      <td>Windows</td>
+      <td>Licensed</td>
+      <td>890k</td>
+      <td>172k</td>
+      <td>298M</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Linux</td>
+      <td>Licensed</td>
+      <td>249k</td>
+      <td>16k</td>
+      <td>613M</td>
+    </tr>
+    <tr>
+      <td>vcpkg</td>
+      <td>Windows</td>
+      <td>Licensed</td>
+      <td>29k</td>
+      <td>1k</td>
+      <td>48M</td>
+    </tr>
+    <tr>
+      <td>GitHub</td>
+      <td>Windows/Linux</td>
+      <td>Licensed</td>
+      <td>73k</td>
+      <td>248</td>
+      <td>441M</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="publicly-hosted-snapshots">Publicly-Hosted Snapshots</h2>
 
-<p>We are currently hosting on AWS, please contact us is you plan to
-consume large amounts of bandwidth.</p>
-
-<p>We include only the subset of binaries for which permissive licenses can be ascertained.</p>
-
-<p>PDB files are too large to be included in our publicly-hosted
-repositories; datasets with pdb files are also available upon request.</p>
-
-<ol>
-  <li>62k Windows PE Binaries (Processed to SQLite database, last updated: Apr 14th 2024):</li>
-</ol>
-
 <ul>
-  <li>SQLite databse (12G):
-    <ul>
-      <li>https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.sqlite.zip</li>
-    </ul>
-  </li>
-  <li>Binary dataset (7G):
-    <ul>
-      <li>https://assemblage-lps.s3.us-west-1.amazonaws.com/public/winpe_licensed.zip</li>
-    </ul>
-  </li>
+  <li>For dataset access and docs, please refer to <a href="https://assemblagedocs.readthedocs.io">Assemblage Docs</a>.</li>
+  <li>Starting in May 2026, we will only update datasets hosted on Hugging Face due to Kaggle’s data size limitations.</li>
+  <li>Starting in May 2026, we will migrate from SQLite to DuckDB for improved durability and performance.</li>
 </ul>
 
-<p>2.Windows vcpkg dataset (Processed to SQLite database, 29k):</p>
+<h2 id="github-repo">GitHub Repo</h2>
+
+<p>Assemblage’s public source is kept <a href="https://github.com/Assemblage-Dataset/Assemblage">here</a>, please report bugs via GitHub Issues.</p>
+
+<h2 id="contact-us">Contact Us</h2>
+
+<p>To contact us about datasets access, deployment, or any other questions, please email current maintainers by:</p>
 
 <ul>
-  <li>SQLite database (3.3GB):
-    <ul>
-      <li>https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.sqlite.zip</li>
-    </ul>
-  </li>
-  <li>Binary dataset (18G):
-    <ul>
-      <li>https://assemblage-lps.s3.us-west-1.amazonaws.com/public/vcpkg.zip</li>
-    </ul>
-  </li>
+  <li>Kristopher Micinski: kkmicins@syr.edu</li>
+  <li>Chang Liu: cliu57@syr.edu</li>
 </ul>
 
-<p>3.Linux GitHub dataset (Processed to SQLite database, 211k):</p>
+<p>Here are the email addresses of all contributors to this project (sorted by last name):</p>
 
 <ul>
-  <li>SQLite database (23M):
-    <ul>
-      <li>https://assemblage-lps.s3.us-west-1.amazonaws.com/public/feb15_linux_licensed.sqlite</li>
-    </ul>
-  </li>
-  <li>Binary dataset (72G):
-    <ul>
-      <li>https://assemblage-lps.s3.us-west-1.amazonaws.com/public/licensed_linux.zip</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="github-repo-bugs">GitHub Repo, bugs</h2>
-
-<p>Assemblage’s public source is kept
-<a href="https://github.com/Assemblage-Dataset/Assemblage">here</a>.</p>
-
-<p>Please report bugs via GitHub.</p>
-
-<h2 id="bugs--contact-us--citations">Bugs / Contact Us / Citations</h2>
-
-<p>Assemblage is primarily developed at Syracuse University, by a team
-that includes:</p>
-
-<ul>
-  <li>Chang Liu, cliu57@syr.edu, Syracuse University (PhD student)</li>
-  <li>Yihao Sun, ysun67@syr.edu, Syracuse University (PhD student)</li>
-  <li>Kristopher Micinski, kkmicins@syr.edu Asst. Prof @ Syracuse University</li>
+  <li>Naveen Ashok: nashok@syr.edu</li>
+  <li>Alex Duly: apduly@syr.edu</li>
+  <li>Maya Fuchs: fuchs_maya@bah.com</li>
+  <li>James Holt: holt@lps.umd.edu</li>
+  <li>Mia Kerchen: mhkerche@syr.edu</li>
+  <li>Chang Liu: cliu57@syr.edu</li>
+  <li>Kristopher Micinski: kkmicins@syr.edu</li>
+  <li>Townsend Southard Pantano: tgsoutha@syr.edu</li>
+  <li>Edward Raff: Raff.Edward@gmail.com</li>
+  <li>Rebecca Saul: Saul_Rebecca@bah.com</li>
+  <li>Yihao Sun: ysun67@syr.edu</li>
 </ul>
 
 <p>Please reach out if you are using the Assemblage dataset for your work
 or would be interested in chatting about your usage apropos binary
-analysis.</p>
-
-<p>Please cite our Arxiv draft (link forthcoming).</p>
+analysis. If you find our dataset useful, we’d appreciate a <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bbefc73a187dd42e0dc065b4e7a0615-Abstract-Datasets_and_Benchmarks_Track.html">citation</a>.</p>
 
         </section>
 
-        <aside id="sidebar">
-          
-            <a href="/assets/total-datasheet.pdf" class="button">
-              <small>Datasheet (mixed licenses)</small>
-              1.3M Binaries
-            </a>
-          
-
-          
-        </aside>
       </div>
     </div>
 
