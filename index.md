@@ -27,25 +27,25 @@ Our dataset was initially released in March 2024 and looks roughly like this:
 
 As of May 2026, the public dataset has been updated with the latest statistics:
 
-| Source       | Platform      | License  | Total | Repositories | Functions |
+| Name         | Platform      | License  | Total | Repositories | Functions |
 |--------------|---------------|----------|-------|--------------|-----------|
-| GitHub       | Windows       | Licensed | 890k  | 172k         | 298M      |
+| GitHub       | Windows       | Licensed | 88k   | 13k          | 50M      |
 |              | Linux         | Licensed | 249k  | 16k          | 613M      |
 | vcpkg        | Windows       | Licensed | 29k   | 1k           | 48M       |
-| GitHub       | Windows/Linux | Licensed | 73k   | 248          | 441M      |
+| Deephistory  | Windows/Linux | Licensed | 73k   | 248          | 441M      |
 
 
 
 ## Publicly-Hosted Snapshots
 
-- For dataset access and docs, please refer to [Assemblage Docs](https://assemblagedocs.readthedocs.io).
+- For dataset access and docs, please refer to [Assemblage Docs](https://assemblagedocs.readthedocs.io/en/latest/dataset.html).
 - Starting in May 2026, we will only update datasets hosted on Hugging Face due to Kaggle’s data size limitations.
 - Starting in May 2026, we will migrate from SQLite to DuckDB for improved durability and performance.
 
 
 ## GitHub Repo
 
-Assemblage's public source is kept [here](https://github.com/Assemblage-Dataset/Assemblage), please report bugs via GitHub Issues.
+Assemblage's public source is released [on GitHub](https://github.com/Assemblage-Dataset/Assemblage), please report bugs via GitHub Issues.
 
 ## Contact Us
 
@@ -56,6 +56,7 @@ To contact us about datasets access, deployment, or any other questions, please 
 
 Here are the email addresses of all contributors to this project (sorted by last name):
 
+- Nicolò Altamura: altamura@nicolo.dev
 - Naveen Ashok: nashok@syr.edu
 - Alex Duly: apduly@syr.edu
 - Maya Fuchs: fuchs_maya@bah.com
@@ -71,4 +72,5 @@ Here are the email addresses of all contributors to this project (sorted by last
 
 Please reach out if you are using the Assemblage dataset for your work
 or would be interested in chatting about your usage apropos binary
-analysis. If you find our dataset useful, we'd appreciate a [citation](https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bbefc73a187dd42e0dc065b4e7a0615-Abstract-Datasets_and_Benchmarks_Track.html).
+analysis.  
+If you find our dataset useful, we'd appreciate a citation on [Assemblage paper](https://arxiv.org/abs/2405.03991) or [Assemblage Deep History paper](https://arxiv.org/abs/2605.21615).
