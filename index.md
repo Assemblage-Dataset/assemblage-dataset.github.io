@@ -6,12 +6,6 @@ layout: default
 
 Assemblage is a dataset of x86-64 Linux ELF and Windows PE executables built from open-source C/C++ and Rust projects, along with a cloud-based distributed system for building large, diverse corpora of binaries.
 
-<div class="arch">
-  <figure>
-    <img src="/assets/images/assemblage-design.png" alt="Assemblage's high-level system design" width="465">
-    <figcaption>A coordinator dispatches GitHub repositories to a pool of build workers over RabbitMQ, and the resulting binaries and metadata are stored for export.</figcaption>
-  </figure>
-</div>
 
 ## Datasets
 
