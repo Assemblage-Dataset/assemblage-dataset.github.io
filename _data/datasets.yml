@@ -1,0 +1,55 @@
+# Dataset cards shown on the home page (rendered by _includes/dataset-cards.html).
+# Cards are sorted by `updated` (newest first); use a YYYY-MM-DD date, shown as "Mon YYYY".
+- name: GitHub Linux
+  url: https://huggingface.co/datasets/changliu8541/Assemblage_LinuxELF
+  platform: Linux
+  language: C/C++
+  format: DuckDB
+  binaries: 249k
+  repositories: 16k
+  functions: 613M
+  updated: 2026-05-07
+  note: ELF binaries with DWARF-derived function, address, and line tables.
+
+- name: GitHub Windows
+  url: https://huggingface.co/datasets/changliu8541/Assemblage_PE
+  platform: Windows
+  language: C/C++
+  format: SQLite
+  binaries: 88k
+  repositories: 13k
+  functions: 50M
+  updated: 2024-10-23
+  note: MSVC-built PE binaries with PDB-derived function and source metadata.
+
+- name: vcpkg
+  url: https://huggingface.co/datasets/changliu8541/Assemblage_vcpkgDLL
+  platform: Windows
+  language: C/C++
+  format: SQLite
+  binaries: 29k
+  repositories: 1k
+  functions: 48M
+  updated: 2024-06-20
+  note: DLLs built from vcpkg ports, shipped with their PDB files.
+
+- name: Deep History
+  url: https://huggingface.co/datasets/changliu8541/assemblage-deephistory
+  platform: Windows/Linux
+  language: C/C++
+  format: DuckDB
+  binaries: 73k
+  repositories: 248
+  functions: 441M
+  updated: 2026-05-06
+  note: Multi-year version histories across compilers, with 329 CVEs mapped to functions.
+
+- name: Rust
+  url: https://huggingface.co/datasets/changliu8541/assemblage-rust
+  platform: Linux
+  language: Rust
+  format: tar + JSON
+  binaries: 127k
+  repositories: 11k
+  updated: 2026-08-27
+  note: Unprocessed builds across LLVM, Cranelift, and GCC backends, with source trees and IR for a subset.

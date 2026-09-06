@@ -1,0 +1,28 @@
+{%- assign datasets = site.data.datasets | sort: "updated" | reverse %}
+<div class="ds-grid">
+{%- for d in datasets %}
+  <a class="ds-card" href="{{ d.url }}" target="_blank" rel="noopener">
+    <div class="ds-head">
+      <h3>{{ d.name }}</h3>
+      <span class="ds-arrow" aria-hidden="true">&#8599;</span>
+    </div>
+    <div class="ds-tags">
+      <span class="ds-tag">{{ d.platform }}</span>
+      <span class="ds-tag">{{ d.language }}</span>
+      <span class="ds-tag ds-tag--format">{{ d.format }}</span>
+    </div>
+    <div class="ds-stats">
+      <div><span class="ds-stat-label">Binaries</span><span class="ds-stat-value">{{ d.binaries }}</span></div>
+      <div><span class="ds-stat-label">Repos</span><span class="ds-stat-value">{{ d.repositories }}</span></div>
+      <div><span class="ds-stat-label">Functions</span><span class="ds-stat-value">{{ d.functions | default: "&mdash;" }}</span></div>
+    </div>
+    {%- if d.note %}
+    <p class="ds-note">{{ d.note }}</p>
+    {%- endif %}
+    <div class="ds-foot">
+      <span>Updated {{ d.updated | date: "%b %Y" }}</span>
+      <span class="ds-link">Hugging Face</span>
+    </div>
+  </a>
+{%- endfor %}
+</div>

@@ -4,43 +4,18 @@ layout: default
 
 # About Assemblage
 
-Assemblage is a dataset of x86-64 ELF and Windows PE executables, along with a cloud-based distributed system for building large, diverse corpora of binaries.
+Assemblage is a dataset of x86-64 Linux ELF and Windows PE executables built from open-source C/C++ and Rust projects, along with a cloud-based distributed system for building large, diverse corpora of binaries.
 
 Assemblage's high-level design looks like this:
 
 ![Assemblage's high-level system design](/assets/images/assemblage-design.png){:width="500"}
 
 
-## Dataset Snapshot
+## Datasets
 
-Our dataset was initially released in March 2024 and looks roughly like this:
+All datasets are hosted on Hugging Face (the Kaggle copies are no longer updated) and contain only licensed code. For download instructions, schemas, and changelogs, see the [Assemblage Docs](https://assemblagedocs.readthedocs.io/en/latest/dataset.html).
 
-| Source  | Platform | License  | Total | Repositories | Functions |
-|---------|----------|----------|-------|--------------|-----------|
-| GitHub  | Windows  | Mixed    | 890k  | 172k         | 298M      |
-|         |          | Licensed | 62k   | 12k          | 38M       |
-|         | Linux    | Mixed    | 428k  | 48k          | 316M      |
-|         |          | Licensed | 211k  | 13k          | 186M      |
-| vcpkg   | Windows  | Licensed | 29k   | 1k           | 48M       |
-
-<br>
-
-As of May 2026, the public dataset has been updated with the latest statistics:
-
-| Name         | Platform      | License  | Total | Repositories | Functions |
-|--------------|---------------|----------|-------|--------------|-----------|
-| GitHub       | Windows       | Licensed | 88k   | 13k          | 50M      |
-|              | Linux         | Licensed | 249k  | 16k          | 613M      |
-| vcpkg        | Windows       | Licensed | 29k   | 1k           | 48M       |
-| Deephistory  | Windows/Linux | Licensed | 73k   | 248          | 441M      |
-
-
-
-## Publicly-Hosted Snapshots
-
-- For dataset access and docs, please refer to [Assemblage Docs](https://assemblagedocs.readthedocs.io/en/latest/dataset.html).
-- Starting in May 2026, we will only update datasets hosted on Hugging Face due to Kaggle’s data size limitations.
-- Starting in May 2026, we will migrate from SQLite to DuckDB for improved durability and performance.
+{% include dataset-cards.html %}
 
 
 ## GitHub Repo

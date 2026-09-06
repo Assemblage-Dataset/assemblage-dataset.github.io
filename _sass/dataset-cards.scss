@@ -1,0 +1,167 @@
+/* DATASET CARDS (home page) */
+
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 0 0 28px;
+}
+
+.ds-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 16px 14px;
+  overflow: hidden;
+  color: #666;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #e1e8f0;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+/* accent bar that sweeps in on hover */
+.ds-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2879d0, #9ddcff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.ds-card:hover,
+.ds-card:focus-visible {
+  color: #666;
+  border-color: #9ddcff;
+  box-shadow: 0 14px 28px -10px rgba(40, 121, 208, 0.35), 0 3px 8px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
+.ds-card:hover::before,
+.ds-card:focus-visible::before {
+  transform: scaleX(1);
+}
+.ds-card:focus-visible {
+  outline: 2px solid #2879d0;
+  outline-offset: 2px;
+}
+
+.ds-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#main-content .ds-card h3 {
+  margin: 0;
+  font-size: 19px;
+  color: #474747;
+  text-indent: 0;
+  transition: color 0.22s ease;
+}
+#main-content .ds-card h3::before {
+  padding: 0;
+  margin: 0;
+  content: none;
+}
+#main-content .ds-card:hover h3,
+#main-content .ds-card:focus-visible h3 {
+  color: #2879d0;
+}
+
+.ds-arrow {
+  font-size: 15px;
+  color: #2879d0;
+  opacity: 0.4;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+.ds-card:hover .ds-arrow,
+.ds-card:focus-visible .ds-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+.ds-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.ds-tag {
+  padding: 2px 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #2268b2;
+  background: #f2f8fc;
+  border: 1px solid #dbe7f3;
+  border-radius: 999px;
+}
+.ds-tag--format {
+  color: #555;
+  background: #f5f5f5;
+  border-color: #e6e6e6;
+}
+
+.ds-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.ds-stat-label {
+  display: block;
+  font-size: 10.5px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.ds-stat-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-note {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #777;
+}
+
+.ds-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  margin-top: auto;
+  font-size: 12px;
+  color: #999;
+  border-top: 1px solid #f0f0f0;
+}
+.ds-foot .ds-link {
+  font-weight: 500;
+  color: #2879d0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-card,
+  .ds-card::before,
+  #main-content .ds-card h3,
+  .ds-arrow {
+    transition: none;
+  }
+  .ds-card:hover,
+  .ds-card:focus-visible {
+    transform: none;
+  }
+}
