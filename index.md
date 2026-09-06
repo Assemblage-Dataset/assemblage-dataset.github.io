@@ -8,7 +8,7 @@ Assemblage is a dataset of x86-64 Linux ELF and Windows PE executables built fro
 
 <div class="arch">
   <figure>
-    <img src="/assets/images/assemblage-design.png" alt="Assemblage's high-level system design" width="620">
+    <img src="/assets/images/assemblage-design.png" alt="Assemblage's high-level system design" width="465">
     <figcaption>A coordinator dispatches GitHub repositories to a pool of build workers over RabbitMQ, and the resulting binaries and metadata are stored for export.</figcaption>
   </figure>
 </div>
