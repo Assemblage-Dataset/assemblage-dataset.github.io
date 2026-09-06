@@ -2,22 +2,18 @@
 ---
 
 @import 'jekyll-theme-architect';
+@import 'custom';
 @import 'dataset-cards';
 
-.inner {
-  width: 760px;
-}
-
+/* Single-column layout: the sidebar is unused, so content spans the full inner width. */
 #main-content {
   float: none;
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+/* Wider content column on tablets and desktops; phones keep the theme's fluid width. */
+@media only screen and (min-width: 768px) {
   .inner {
     width: 760px;
-  }
-  #main-content {
-    width: 100%;
   }
 }

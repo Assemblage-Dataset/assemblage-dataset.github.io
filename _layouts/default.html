@@ -20,15 +20,15 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>	  
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="https://github.com/Assemblage-Dataset/Assemblage" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
+        <nav class="hero-links" aria-label="Quick links">
+          <a href="#datasets">Datasets</a>
+          <a href="https://assemblagedocs.readthedocs.io/en/latest/dataset.html">Docs</a>
+          <a href="https://github.com/Assemblage-Dataset/Assemblage">GitHub</a>
+          <a href="https://arxiv.org/abs/2405.03991">Paper</a>
+        </nav>
       </div>
     </header>
 
@@ -38,6 +38,10 @@
           {{ content }}
         </section>
 
+        <footer>
+          <span>Assemblage code is MIT licensed. Each binary keeps the license of its source repository.</span>
+          <a href="https://github.com/Assemblage-Dataset/assemblage-dataset.github.io">Site source</a>
+        </footer>
       </div>
     </div>
 

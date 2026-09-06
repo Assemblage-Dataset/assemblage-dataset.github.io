@@ -1,0 +1,16 @@
+<div class="maintainers">
+  <span class="people-label">Maintainers</span>
+  <ul class="people">
+  {%- for p in site.data.people.maintainers %}
+    <li><span class="people-name">{{ p.name }}</span><a class="people-mail" href="mailto:{{ p.email }}">{{ p.email }}</a></li>
+  {%- endfor %}
+  </ul>
+</div>
+<div class="contributors">
+  <span class="people-label">All contributors, by last name</span>
+  <ul class="people">
+  {%- for p in site.data.people.contributors %}
+    <li><span class="people-name">{{ p.name }}</span><a class="people-mail" href="mailto:{{ p.email }}">{{ p.email }}</a></li>
+  {%- endfor %}
+  </ul>
+</div>

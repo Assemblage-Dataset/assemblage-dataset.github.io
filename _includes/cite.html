@@ -1,0 +1,28 @@
+<div class="cites">
+{%- for c in site.data.citations %}
+  <details class="cite">
+    <summary>
+      <span class="cite-title">{{ c.title }}</span>
+      <span class="cite-venue">{{ c.venue }}</span>
+    </summary>
+    <div class="cite-body">
+      <pre class="cite-bib"><code>{{ c.bibtex | escape }}</code></pre>
+      <div class="cite-actions">
+        <button type="button" class="cite-copy">Copy BibTeX</button>
+        <a href="{{ c.url }}">{{ c.link_label }}</a>
+      </div>
+    </div>
+  </details>
+{%- endfor %}
+  <script>
+    document.querySelectorAll('.cite-copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var text = btn.closest('.cite').querySelector('.cite-bib').textContent;
+        navigator.clipboard.writeText(text).then(function () {
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = 'Copy BibTeX'; }, 1500);
+        });
+      });
+    });
+  </script>
+</div>

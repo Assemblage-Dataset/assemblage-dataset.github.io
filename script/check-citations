@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+# Verifies that every BibTeX entry in _data/citations.yml is byte-identical to the file at its `source` URL.
+require "yaml"
+require "open-uri"
+
+ok = true
+YAML.load_file(File.expand_path("../_data/citations.yml", __dir__)).each do |c|
+  remote = URI.open(c.fetch("source"), &:read).b
+  local = c.fetch("bibtex").b
+  same = remote == local
+  ok &&= same
+  puts format("%-4s %s (%d bytes remote, %d bytes local)", same ? "OK" : "DIFF", c["title"], remote.bytesize, local.bytesize)
+end
+exit(ok ? 0 : 1)

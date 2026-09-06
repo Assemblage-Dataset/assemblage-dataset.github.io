@@ -1,9 +1,12 @@
 {%- assign datasets = site.data.datasets | sort: "updated" | reverse %}
+{%- assign now_s = site.time | date: "%s" | plus: 0 %}
 <div class="ds-grid">
 {%- for d in datasets %}
-  <a class="ds-card" href="{{ d.url }}" target="_blank" rel="noopener">
+  {%- assign upd_s = d.updated | date: "%s" | plus: 0 %}
+  {%- assign age_days = now_s | minus: upd_s | divided_by: 86400 %}
+  <a class="ds-card" href="{{ d.url }}" target="_blank" rel="noopener" style="--i: {{ forloop.index0 }}">
     <div class="ds-head">
-      <h3>{{ d.name }}</h3>
+      <h3>{{ d.name }}{% if age_days < 90 %} <span class="ds-new">New</span>{% endif %}</h3>
       <span class="ds-arrow" aria-hidden="true">&#8599;</span>
     </div>
     <div class="ds-tags">

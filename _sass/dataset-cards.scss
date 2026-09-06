@@ -165,3 +165,41 @@
     transform: none;
   }
 }
+
+/* "New" badge for recently updated datasets */
+.ds-new {
+  display: inline-block;
+  padding: 1px 7px;
+  margin-left: 6px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  background: #2879d0;
+  border-radius: 999px;
+}
+
+/* Staggered entrance when the grid first appears */
+@keyframes ds-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ds-card {
+  animation: ds-in 0.45s ease backwards;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ds-card {
+    animation: none;
+  }
+}
