@@ -15,7 +15,7 @@ All datasets are hosted on Hugging Face (the Kaggle copies are no longer updated
 
 ## GitHub Repo
 
-Assemblage's public source is released [on GitHub](https://github.com/Assemblage-Dataset/Assemblage), please report bugs via GitHub Issues.
+{% include repo-card.html %}
 
 ## Contact Us
 

@@ -1,0 +1,8 @@
+# Repository cards (rendered by _includes/repo-card.html). Star, fork, and open-issue counts are
+# fetched live from the GitHub API in the browser; only the fields below are static.
+- name: Assemblage-Dataset/Assemblage
+  url: https://github.com/Assemblage-Dataset/Assemblage
+  issues_url: https://github.com/Assemblage-Dataset/Assemblage/issues
+  description: Distributed binary-corpus generator. Scrapes licensed C/C++ and Rust repositories, builds them across compilers and optimization levels, and archives the binaries with function-level metadata.
+  language: Python
+  license: MIT
