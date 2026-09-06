@@ -1,21 +1,20 @@
 # Rendered by _includes/cite.html. Each `bibtex` value must stay byte-identical to its `source` URL;
-# run `ruby script/check-citations` to verify. Use `|-` when the source has no trailing newline and `|`
-# when it ends with exactly one. Regenerate from the source rather than pasting by hand.
-
+# run `ruby script/check-citations` to verify. The `|` / `|-` chomping indicator preserves whether the
+# source file ends with a newline.
 - title: "Assemblage: Automatic Binary Dataset Construction for Machine Learning"
   venue: NeurIPS 2024, Datasets and Benchmarks Track
   url: https://arxiv.org/abs/2405.03991
   link_label: arXiv
-  source: https://arxiv.org/bibtex/2405.03991
-  bibtex: |-
+  source: https://proceedings.neurips.cc/paper_files/paper/2024/file/6bbefc73a187dd42e0dc065b4e7a0615-Bibtex-Datasets_and_Benchmarks_Track.bib
+  bibtex: |
     @misc{liu2024assemblageautomaticbinarydataset,
-          title={Assemblage: Automatic Binary Dataset Construction for Machine Learning}, 
-          author={Chang Liu and Rebecca Saul and Yihao Sun and Edward Raff and Maya Fuchs and Townsend Southard Pantano and James Holt and Kristopher Micinski},
-          year={2024},
-          eprint={2405.03991},
-          archivePrefix={arXiv},
-          primaryClass={cs.CR},
-          url={https://arxiv.org/abs/2405.03991}, 
+      title={Assemblage: Automatic Binary Dataset Construction for Machine Learning}, 
+      author={Chang Liu and Rebecca Saul and Yihao Sun and Edward Raff and Maya Fuchs and Townsend Southard Pantano and James Holt and Kristopher Micinski},
+      year={2024},
+      eprint={2405.03991},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2405.03991}, 
     }
 
 - title: "Assemblage-DeepHistory: A Cross-Build Binary Dataset with Temporal Coverage"
@@ -25,11 +24,11 @@
   source: https://arxiv.org/bibtex/2605.21615
   bibtex: |-
     @misc{liu2026assemblagedeephistorycrossbuildbinarydataset,
-          title={ASSEMBLAGE-DEEPHISTORY: A Cross-Build Binary Dataset with Temporal Coverage}, 
-          author={Chang Liu and Noah Fleischmann and Nicolò Altamura and Edward Raff and James Holt and Kristopher Micinski},
-          year={2026},
-          eprint={2605.21615},
-          archivePrefix={arXiv},
-          primaryClass={cs.CR},
-          url={https://arxiv.org/abs/2605.21615}, 
+      title={ASSEMBLAGE-DEEPHISTORY: A Cross-Build Binary Dataset with Temporal Coverage}, 
+      author={Chang Liu and Noah Fleischmann and Nicolò Altamura and Edward Raff and James Holt and Kristopher Micinski},
+      year={2026},
+      eprint={2605.21615},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2605.21615}, 
     }
