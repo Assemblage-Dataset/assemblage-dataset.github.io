@@ -1,0 +1,4 @@
+# Accounts whose public datasets are summed by the downloads badge in the header (_includes/downloads-badge.html).
+# Counts are fetched live in the browser: all-time downloads from Hugging Face plus download counts from Kaggle.
+huggingface: changliu8541
+kaggle: changliuh7rfs5
