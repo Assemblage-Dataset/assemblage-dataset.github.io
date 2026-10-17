@@ -33,7 +33,7 @@
   updated: 2024-06-20
   note: DLLs built from vcpkg ports, shipped with their PDB files.
 
-- name: Deep History
+- name: DeepHistory
   url: https://huggingface.co/datasets/changliu8541/assemblage-deephistory
   platform: Windows/Linux
   language: C/C++

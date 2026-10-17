@@ -4,12 +4,12 @@ layout: default
 
 # About Assemblage
 
-Assemblage is a dataset of x86-64 Linux ELF and Windows PE executables built from open-source C/C++ and Rust projects, along with a cloud-based distributed system for building large, diverse corpora of binaries.
+Assemblage provides datasets of x86-64 Linux ELF and Windows PE executables built from open-source C/C++ and Rust projects, along with a distributed system for building large, diverse corpora of binaries.
 
 
 ## Datasets
 
-All datasets are hosted on Hugging Face (the Kaggle copies are no longer updated) and contain only licensed code. For download instructions, schemas, and changelogs, see the [Assemblage Docs](https://assemblagedocs.readthedocs.io/en/latest/dataset.html).
+All datasets are hosted on Hugging Face (the Kaggle copies are no longer updated) and are built only from licensed repositories. For download instructions, schemas, and changelogs, see the [Assemblage Docs](https://assemblagedocs.readthedocs.io/en/latest/dataset.html).
 
 {% include dataset-cards.html %}
 
